@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto";
+}
+
+body {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* fonts */
+.title {
+    font-family: "Impact";
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p,
+li,
+a {
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/* navbar */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: red;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav-links li {
+    margin: 0 24px;
+}
+
+.nav-links li a {
+    color: white;
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+
+.logo {
+    margin-left: 29px;
+    margin-top: 12px;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.logins {
+    margin-left: auto;
+    margin-right: 35px;
+    justify-content: space-between;
+}
+
+.logins a {
+    color: white;
+    transition: 500ms;
+}
+
+.logins a:hover {
+    color: lime;
+}
+
+.logins button {
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 12px;
+    padding: 9px 15px;
+    transition: 500ms;
+}
+
+.logins button:hover {
+    background-color: lime;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* welcome page */
+#welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("css-assets/pexels-soumil-kumar-4325-735911.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 7in;
+}
+
+#welcome h1 {
+    font-size: 4.5em;
+}
+
+button.join {
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 25px;
+    transition: 500ms;
+}
+
+button.join:hover {
+    background-color: red;
+    color: white;
+    padding: 17px 35px;
+}
+
+/* about page */
+#about {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+#about .zb-only {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    margin-top: 50px;
+}
+
+#about .zb-only img {
+    width: 30%;
+    height: 30%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#about .pw-you {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    margin-top: 50px;
+}
+
+#about .pw-you img {
+    width: 30%;
+    height: 30%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#about .support {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    margin-top: 50px;
+}
+
+#about .support img {
+    width: 30%;
+    height: 30%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#about .sp-word {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    margin-top: 50px;
+}
+
+#about .sp-word img {
+    width: 30%;
+    height: 30%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* end */
+#end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("css-assets/pexels-rdne-7915526.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 7in;
+}
+
+#end h1 {
+    font-size: 4.5em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    color: white;
+    background-color: black;
+}
+
+.f-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.f-links li a {
+    color: white;
+}
+
+.f-links li a:hover {
+    color: red;
+}
+
+.f-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.f-copy a {
+    color: red;
+}
+
+.f-copy a:hover {
+    color: lime;
+}
+
+/* mobile design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}

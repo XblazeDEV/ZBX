@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto";
+    background: linear-gradient(to right, white, #dbdbdb);
+}
+
+body {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* fonts */
+.title {
+    font-family: "Impact";
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.copy {
+    font-size: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p,
+li {
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    font-size: 1em;
+    text-decoration: none;
+    color: lime;
+}
+
+/* container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* input box */
+.box {
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    background-color: red;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.inputs input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    color: #adadad;
+    background-color: white;
+}
+
+.inputs input.user {
+    margin-bottom: 51px;
+}
+
+button {
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 25px;
+    transition: 500ms;
+}
+
+button:hover {
+    background-color: lime;
+    color: white;
+    padding: 17px 35px;
+}
+
+.taken {
+    background-color: red;
+    padding: 100px;
+}
