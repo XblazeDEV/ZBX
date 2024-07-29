@@ -9,7 +9,7 @@ login_form.addEventListener("submit", async (event) => {
 
     try {
         console.log("error")
-        const response = await fetch("https://crispy-chainsaw-vx7g77p7x4q34vg-8000.app.github.dev/token", {
+        const response = await fetch("https://fictional-space-computing-machine-7g4r447j9jxcx9xv-8000.app.github.dev/login", {
             "method": "POST",
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
