@@ -1,46 +1,21 @@
-import pymongo
-from pymongo import MongoClient
-import pymongo.errors
+import os
 import logging
+from dotenv import load_dotenv
+from supabase import create_client
 
 
 class DatabaseManager:
-    def __init__(self, name: str, constr: str) -> None:
-        logging.basicConfig(level=logging.DEBUG, filename="test.log", filemode="w")
+    def __init__(self):
+        logging.basicConfig(level=logging.DEBUG, filename="logs.log", filemode="w")
+        load_dotenv()
+        self.url: str = os.getenv("DATABASE_URL")
+        self.key: str = os.getenv("DATABASE_KEY")
 
-        self.name: str = name
-        self.constr: str = constr
+        logging.debug("url: %s", self.url)
+        self.database = create_client(self.url, self.key)
 
-        try:
-            self.client = MongoClient(constr)
-        except pymongo.errors.ServerSelectionTimeoutError:
-            raise self.ZBX_TIMEOUT("Database timeout")
+    def get_data(self, data: list):
+        response = self.database.table("users").select("*").eq("usrname", data[0])
+        response.execute()
         
-        logging.debug("passed line 13 btw")
-
-        self.db = self.client.zbx
-        self.col = self.db.users
-
-    def get_data(self) -> list[str]:
-        try:
-            response = self.col.find_one({"usrname": self.name})
-        except pymongo.errors.ServerSelectionTimeoutError:
-            return["500"]
-
-        if response is None:
-            return ["404"]
-        else:
-            data: list[str] = []
-            for info in response:
-                data.append(info)
-
-            return data
-        
-    def add_data(self, to_add: dict) -> dict:
-        response = self.col.insert_one(to_add)
-
-        return {"ID": str(response.inserted_id)}
-    
-    class ZBX_TIMEOUT(Exception):
-        def __init__(self, *args: object) -> None:
-            super().__init__(*args)
+        return response.data if response.data else "404"

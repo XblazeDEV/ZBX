@@ -20,28 +20,23 @@ def hello():
 
 @api.post("/login")
 async def login(usrform: OAuth2PasswordRequestForm = Depends()):
-    db = DatabaseManager(usrform.username, ENVIRONS.get_mongodb_con())
-    usrdata: list[str] = db.get_data()
+    db = DatabaseManager()
+    usrdata = db.get_data()
 
-    if usrdata == ["404"]:
+    if usrdata == "404":
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="404. No user found"
+            detail="404. User not found"
         )
-    elif usrdata == ["500"]:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="500. Error while connecting to the database"
-        )
-    
-    if not verify_pass(usrform.password, usrdata[2]):
+
+    if not verify_pass(usrform.password, base64.b64decode(usrdata[0]["usrpass"].encode()).decode()):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="401. Incorrect password",
             headers={"WWW-Authenticate": "Bearer"}
         )
-    
-    return {"200": "success", "data": usrdata}
+
+    return {"200": "success", "token": usrform.username}
 
 @api.get("/user")
 async def get_user(token: str = Depends(auth_scheme)):
