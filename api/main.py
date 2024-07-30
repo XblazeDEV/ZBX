@@ -1,9 +1,11 @@
 import base64
+from dotenv import load_dotenv
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 from .core import LogForm, EnviromentManager, DatabaseManager
 
+load_dotenv()
 api = FastAPI()
 
 ENVIRONS = EnviromentManager()
@@ -21,22 +23,22 @@ def hello():
 @api.post("/login")
 async def login(usrform: OAuth2PasswordRequestForm = Depends()):
     db = DatabaseManager()
-    usrdata = db.get_data()
+    login = db.get_user(usrform.username, usrform.password)
 
-    if usrdata == "404":
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="404. User not found"
-        )
-
-    if not verify_pass(usrform.password, base64.b64decode(usrdata[0]["usrpass"].encode()).decode()):
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="401. Incorrect password",
-            headers={"WWW-Authenticate": "Bearer"}
-        )
-
-    return {"200": "success", "token": usrform.username}
+    if login != "success 200":
+        error = login
+        if error == "Invalid login credentials":
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="401. Invalid email or password"
+            )
+        else:
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail=f"500. An error happened: {error}"
+            )
+        
+    return {"200": "success"}
 
 @api.get("/user")
 async def get_user(token: str = Depends(auth_scheme)):

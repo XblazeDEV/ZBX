@@ -1,1 +1,218 @@
-DEBUG:root:url: None
+DEBUG:root:url: https://mnkxkcrymoaexfmrhsfo.supabase.co
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='/home/codespace/.local/lib/python3.10/site-packages/certifi/cacert.pem'
+DEBUG:httpcore.connection:connect_tcp.started host='mnkxkcrymoaexfmrhsfo.supabase.co' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x71978f03d1b0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x71978f1b9a40> server_hostname='mnkxkcrymoaexfmrhsfo.supabase.co' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x71978f03c5b0>
+DEBUG:httpcore.http2:send_connection_init.started request=<Request [b'POST']>
+DEBUG:httpcore.http2:send_connection_init.complete
+DEBUG:httpcore.http2:send_request_headers.started request=<Request [b'POST']> stream_id=1
+DEBUG:hpack.hpack:Adding (b':method', b'POST') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b':authority', b'mnkxkcrymoaexfmrhsfo.supabase.co') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 1 with 6 bits
+DEBUG:hpack.hpack:Encoding 23 with 7 bits
+DEBUG:hpack.hpack:Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 7 with 7 bits
+DEBUG:hpack.hpack:Adding (b':path', b'/auth/v1/token?grant_type=password') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 4 with 6 bits
+DEBUG:hpack.hpack:Encoding 25 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 19 with 6 bits
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept-encoding', b'gzip, deflate') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 16 with 7 bits
+DEBUG:hpack.hpack:Adding (b'user-agent', b'python-httpx/0.27.0') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 58 with 6 bits
+DEBUG:hpack.hpack:Encoding 14 with 7 bits
+DEBUG:hpack.hpack:Adding (b'x-client-info', b'supabase-py/2.6.0') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 10 with 7 bits
+DEBUG:hpack.hpack:Encoding 12 with 7 bits
+DEBUG:hpack.hpack:Adding (b'apikey', b'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ua3hrY3J5bW9hZXhmbXJoc2ZvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIyOTYwNTEsImV4cCI6MjAzNzg3MjA1MX0.gmiGeKYHVqabMBejPmUVlV10unSZtqiWi5EE_dD1CQU') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 5 with 7 bits
+DEBUG:hpack.hpack:Encoding 167 with 7 bits
+DEBUG:hpack.hpack:Adding (b'authorization', b'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ua3hrY3J5bW9hZXhmbXJoc2ZvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIyOTYwNTEsImV4cCI6MjAzNzg3MjA1MX0.gmiGeKYHVqabMBejPmUVlV10unSZtqiWi5EE_dD1CQU') to the header table, sensitive:True, huffman:True
+DEBUG:hpack.hpack:Encoding 23 with 4 bits
+DEBUG:hpack.hpack:Encoding 172 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-type', b'application/json;charset=UTF-8') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 31 with 6 bits
+DEBUG:hpack.hpack:Encoding 22 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-length', b'141') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 28 with 6 bits
+DEBUG:hpack.hpack:Encoding 2 with 7 bits
+DEBUG:hpack.hpack:Encoded header block to b'\x83A\x97\xa6\xae\xbez\x92\xcfT\x9ce\xf3-6N\x89N\xba-\xacq\x8d\x05\\\x87\x87D\x99`v\xa6v;\x85\x84\x9f\xa9j\xff&\xb0u&$\xfa\xac\xb0V4#\xc1\xec\x93S\x83\xf9c\xe7\x90z\x8e\xaf\xd2g=KN\x94\xd7\xe5\x80.\'W\x07@\x8a\xf2\xb1(1jJ\xc6\xaaS\xff\x8cE\xb5\x8e1\xa0\xabW\xe9\x81.\xe2\xe0@\x85\x1df\xea__\xff(/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x95ml\x97\xb29\x93\xad\x7f\x9coe}r\xfa\xcbY\x19\xd0mF\xcb\xeeO\xcb\xb3\xf3\xa7\x0f\xbf\xdd\xd9\x11\x92\xac\xb4~\x9b#\x99)\r\xa3f{9\xb3\x95\xb8\xf9??\xef\xe4\xf4\xc7\xf9\x94\xe4\x17\xef|\x86\xf0bR\xfa?wds%8m\x8cM\x1b=\xec\xb5\xf3\xfc\xd8m]03\xa3\xa6OZ\xb7\xf3\xf1\xa7~\x04d\xa7\x8bD\xbd\x91\xcd\x1d!\xf7\xa7\xdc\xcc\xe8\xe9\x08t~\x01y\xa96"\xe6\xe7\x8f\x8fa\xc7\xa2\xe9zk\xa7\x87\x1a8\x84\x16\xd5\xbb\xf5=\x8d\xc8\xcd\xe0\xc1\x14\x97\xc3{g\x0f\x1f\x08\xff-\xbaQ\xd8[\x14/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x95ml\x97\xb29\x93\xad\x7f\x9coe}r\xfa\xcbY\x19\xd0mF\xcb\xeeO\xcb\xb3\xf3\xa7\x0f\xbf\xdd\xd9\x11\x92\xac\xb4~\x9b#\x99)\r\xa3f{9\xb3\x95\xb8\xf9??\xef\xe4\xf4\xc7\xf9\x94\xe4\x17\xef|\x86\xf0bR\xfa?wds%8m\x8cM\x1b=\xec\xb5\xf3\xfc\xd8m]03\xa3\xa6OZ\xb7\xf3\xf1\xa7~\x04d\xa7\x8bD\xbd\x91\xcd\x1d!\xf7\xa7\xdc\xcc\xe8\xe9\x08t~\x01y\xa96"\xe6\xe7\x8f\x8fa\xc7\xa2\xe9zk\xa7\x87\x1a8\x84\x16\xd5\xbb\xf5=\x8d\xc8\xcd\xe0\xc1\x14\x97\xc3{g\x0f_\x96\x1du\xd0b\r&=LtA\xea\xfb$\xe3\xb1\x05L\x1c7\xe1Y\xef\\\x82\x0bA'
+DEBUG:httpcore.http2:send_request_headers.complete
+DEBUG:httpcore.http2:send_request_body.started request=<Request [b'POST']> stream_id=1
+DEBUG:httpcore.http2:send_request_body.complete
+DEBUG:httpcore.http2:receive_response_headers.started request=<Request [b'POST']> stream_id=1
+DEBUG:httpcore.http2:receive_remote_settings.started
+DEBUG:httpcore.http2:receive_remote_settings.complete return_value=<RemoteSettingsChanged changed_settings:{ChangedSetting(setting=SettingCodes.MAX_CONCURRENT_STREAMS, original_value=None, new_value=100), ChangedSetting(setting=SettingCodes.INITIAL_WINDOW_SIZE, original_value=65535, new_value=65536), ChangedSetting(setting=SettingCodes.MAX_FRAME_SIZE, original_value=16384, new_value=16777215)}>
+DEBUG:hpack.hpack:Decoding b'?\xe1\x1f\x8ca\x96\xdfi~\x94d\ne\xb6\x85\x04\x014\xa0\\\xb8\xdb7\x00\xfa\x98\xb4o_\x8b\x1du\xd0b\r&=LtA\xea\\\x0273@\x85$\xabX?_\x8fxq\xb9!% F\xf9\x08\xdb\x8c\xad\x92\x1b\xff@\x8a$\xab\x10d\x9c\xab!#M\xa8\x86\xbf\xcfL:2^x\x9a\xa4~V\x1c\xc5\x81\x90\xb6\xcb\x80\x00>\xd45D\xa2\xd9\x0b\xba\xd8\xef\x9e\x91\x9a\xa4\x7f{\x91\xd5a\xa65_JBB\x16\xb4\xad\x82\xa2\x1eCU7@\x8dDkL4\x97\xc0\xfd-\xdc\xb6 \xc7\xab\x011@\x95\xf2\xb1j\xee\x7fK[Z\x13aGJ\xc8-\x9d\xccB\xac\x93R_\x018v\x87%\x07\xb6Ih\x1d\x85@\x85\x1d\tY\x1d\xc9\x90\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x81\xe7\x1a\x00?'
+DEBUG:hpack.hpack:Decoded 4096, consumed 3 bytes
+DEBUG:hpack.table:Resizing header table to 4096 from 4096
+DEBUG:hpack.hpack:Decoded 12, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b':status', b'400'), consumed 1
+DEBUG:hpack.hpack:Decoded 33, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'date', b'Tue, 30 Jul 2024 16:53:09 GMT'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 31, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 11, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-type', b'application/json'), total consumed 13 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 28, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 2, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-length', <memory at 0x71978f1953c0>), total consumed 4 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 15, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cf-ray', b'8ab6dcfc1a9cc563-IAD'), total consumed 23 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 10, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cf-cache-status', b'DYNAMIC'), total consumed 19 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 56, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 26, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), total consumed 28 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 59, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 17, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'vary', b'Origin, Accept-Encoding'), total consumed 19 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 13, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 1, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'sb-gateway-version', <memory at 0x71978f195300>), total consumed 17 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 21, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 1, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-envoy-upstream-service-time', <memory at 0x71978f195480>), total consumed 25 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 54, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 7, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'server', b'cloudflare'), total consumed 9 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'alt-svc', b'h3=":443"; ma=86400'), total consumed 24 bytes, indexed True
+DEBUG:httpcore.http2:receive_response_headers.complete return_value=(400, [(b'date', b'Tue, 30 Jul 2024 16:53:09 GMT'), (b'content-type', b'application/json'), (b'content-length', b'73'), (b'cf-ray', b'8ab6dcfc1a9cc563-IAD'), (b'cf-cache-status', b'DYNAMIC'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'vary', b'Origin, Accept-Encoding'), (b'sb-gateway-version', b'1'), (b'x-envoy-upstream-service-time', b'8'), (b'server', b'cloudflare'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://mnkxkcrymoaexfmrhsfo.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+DEBUG:httpcore.http2:receive_response_body.started request=<Request [b'POST']> stream_id=1
+DEBUG:httpcore.http2:receive_response_body.complete
+DEBUG:httpcore.http2:response_closed.started stream_id=1
+DEBUG:httpcore.http2:response_closed.complete
+DEBUG:multipart.multipart:Calling on_field_start with no data
+DEBUG:multipart.multipart:Calling on_field_name with data[0:10]
+DEBUG:multipart.multipart:Calling on_field_data with data[11:19]
+DEBUG:multipart.multipart:Calling on_field_end with no data
+DEBUG:multipart.multipart:Calling on_field_start with no data
+DEBUG:multipart.multipart:Calling on_field_name with data[20:28]
+DEBUG:multipart.multipart:Calling on_field_data with data[29:63]
+DEBUG:multipart.multipart:Calling on_field_end with no data
+DEBUG:multipart.multipart:Calling on_field_start with no data
+DEBUG:multipart.multipart:Calling on_field_name with data[64:72]
+DEBUG:multipart.multipart:Calling on_field_data with data[73:99]
+DEBUG:multipart.multipart:Calling on_field_end with no data
+DEBUG:multipart.multipart:Calling on_field_start with no data
+DEBUG:multipart.multipart:Calling on_field_name with data[100:105]
+DEBUG:multipart.multipart:Calling on_field_end with no data
+DEBUG:multipart.multipart:Calling on_field_start with no data
+DEBUG:multipart.multipart:Calling on_field_name with data[107:116]
+DEBUG:multipart.multipart:Calling on_field_data with data[117:123]
+DEBUG:multipart.multipart:Calling on_field_end with no data
+DEBUG:multipart.multipart:Calling on_field_start with no data
+DEBUG:multipart.multipart:Calling on_field_name with data[124:137]
+DEBUG:multipart.multipart:Calling on_field_data with data[138:144]
+DEBUG:multipart.multipart:Calling on_field_end with no data
+DEBUG:multipart.multipart:Calling on_end with no data
+DEBUG:root:url: https://mnkxkcrymoaexfmrhsfo.supabase.co
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='/home/codespace/.local/lib/python3.10/site-packages/certifi/cacert.pem'
+DEBUG:httpcore.connection:connect_tcp.started host='mnkxkcrymoaexfmrhsfo.supabase.co' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x71978f03f8e0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x71978f1b8cc0> server_hostname='mnkxkcrymoaexfmrhsfo.supabase.co' timeout=5.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x71978f03f7c0>
+DEBUG:httpcore.http2:send_connection_init.started request=<Request [b'POST']>
+DEBUG:httpcore.http2:send_connection_init.complete
+DEBUG:httpcore.http2:send_request_headers.started request=<Request [b'POST']> stream_id=1
+DEBUG:hpack.hpack:Adding (b':method', b'POST') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b':authority', b'mnkxkcrymoaexfmrhsfo.supabase.co') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 1 with 6 bits
+DEBUG:hpack.hpack:Encoding 23 with 7 bits
+DEBUG:hpack.hpack:Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 7 with 7 bits
+DEBUG:hpack.hpack:Adding (b':path', b'/auth/v1/token?grant_type=password') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 4 with 6 bits
+DEBUG:hpack.hpack:Encoding 25 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 19 with 6 bits
+DEBUG:hpack.hpack:Encoding 3 with 7 bits
+DEBUG:hpack.hpack:Adding (b'accept-encoding', b'gzip, deflate') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 16 with 7 bits
+DEBUG:hpack.hpack:Adding (b'user-agent', b'python-httpx/0.27.0') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 58 with 6 bits
+DEBUG:hpack.hpack:Encoding 14 with 7 bits
+DEBUG:hpack.hpack:Adding (b'x-client-info', b'supabase-py/2.6.0') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 10 with 7 bits
+DEBUG:hpack.hpack:Encoding 12 with 7 bits
+DEBUG:hpack.hpack:Adding (b'apikey', b'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ua3hrY3J5bW9hZXhmbXJoc2ZvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIyOTYwNTEsImV4cCI6MjAzNzg3MjA1MX0.gmiGeKYHVqabMBejPmUVlV10unSZtqiWi5EE_dD1CQU') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 5 with 7 bits
+DEBUG:hpack.hpack:Encoding 167 with 7 bits
+DEBUG:hpack.hpack:Adding (b'authorization', b'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ua3hrY3J5bW9hZXhmbXJoc2ZvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIyOTYwNTEsImV4cCI6MjAzNzg3MjA1MX0.gmiGeKYHVqabMBejPmUVlV10unSZtqiWi5EE_dD1CQU') to the header table, sensitive:True, huffman:True
+DEBUG:hpack.hpack:Encoding 23 with 4 bits
+DEBUG:hpack.hpack:Encoding 172 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-type', b'application/json;charset=UTF-8') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 31 with 6 bits
+DEBUG:hpack.hpack:Encoding 22 with 7 bits
+DEBUG:hpack.hpack:Adding (b'content-length', b'142') to the header table, sensitive:False, huffman:True
+DEBUG:hpack.hpack:Encoding 28 with 6 bits
+DEBUG:hpack.hpack:Encoding 2 with 7 bits
+DEBUG:hpack.hpack:Encoded header block to b'\x83A\x97\xa6\xae\xbez\x92\xcfT\x9ce\xf3-6N\x89N\xba-\xacq\x8d\x05\\\x87\x87D\x99`v\xa6v;\x85\x84\x9f\xa9j\xff&\xb0u&$\xfa\xac\xb0V4#\xc1\xec\x93S\x83\xf9c\xe7\x90z\x8e\xaf\xd2g=KN\x94\xd7\xe5\x80.\'W\x07@\x8a\xf2\xb1(1jJ\xc6\xaaS\xff\x8cE\xb5\x8e1\xa0\xabW\xe9\x81.\xe2\xe0@\x85\x1df\xea__\xff(/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x95ml\x97\xb29\x93\xad\x7f\x9coe}r\xfa\xcbY\x19\xd0mF\xcb\xeeO\xcb\xb3\xf3\xa7\x0f\xbf\xdd\xd9\x11\x92\xac\xb4~\x9b#\x99)\r\xa3f{9\xb3\x95\xb8\xf9??\xef\xe4\xf4\xc7\xf9\x94\xe4\x17\xef|\x86\xf0bR\xfa?wds%8m\x8cM\x1b=\xec\xb5\xf3\xfc\xd8m]03\xa3\xa6OZ\xb7\xf3\xf1\xa7~\x04d\xa7\x8bD\xbd\x91\xcd\x1d!\xf7\xa7\xdc\xcc\xe8\xe9\x08t~\x01y\xa96"\xe6\xe7\x8f\x8fa\xc7\xa2\xe9zk\xa7\x87\x1a8\x84\x16\xd5\xbb\xf5=\x8d\xc8\xcd\xe0\xc1\x14\x97\xc3{g\x0f\x1f\x08\xff-\xbaQ\xd8[\x14/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x95ml\x97\xb29\x93\xad\x7f\x9coe}r\xfa\xcbY\x19\xd0mF\xcb\xeeO\xcb\xb3\xf3\xa7\x0f\xbf\xdd\xd9\x11\x92\xac\xb4~\x9b#\x99)\r\xa3f{9\xb3\x95\xb8\xf9??\xef\xe4\xf4\xc7\xf9\x94\xe4\x17\xef|\x86\xf0bR\xfa?wds%8m\x8cM\x1b=\xec\xb5\xf3\xfc\xd8m]03\xa3\xa6OZ\xb7\xf3\xf1\xa7~\x04d\xa7\x8bD\xbd\x91\xcd\x1d!\xf7\xa7\xdc\xcc\xe8\xe9\x08t~\x01y\xa96"\xe6\xe7\x8f\x8fa\xc7\xa2\xe9zk\xa7\x87\x1a8\x84\x16\xd5\xbb\xf5=\x8d\xc8\xcd\xe0\xc1\x14\x97\xc3{g\x0f_\x96\x1du\xd0b\r&=LtA\xea\xfb$\xe3\xb1\x05L\x1c7\xe1Y\xef\\\x82\x0bB'
+DEBUG:httpcore.http2:send_request_headers.complete
+DEBUG:httpcore.http2:send_request_body.started request=<Request [b'POST']> stream_id=1
+DEBUG:httpcore.http2:send_request_body.complete
+DEBUG:httpcore.http2:receive_response_headers.started request=<Request [b'POST']> stream_id=1
+DEBUG:httpcore.http2:receive_remote_settings.started
+DEBUG:httpcore.http2:receive_remote_settings.complete return_value=<RemoteSettingsChanged changed_settings:{ChangedSetting(setting=SettingCodes.MAX_CONCURRENT_STREAMS, original_value=None, new_value=100), ChangedSetting(setting=SettingCodes.INITIAL_WINDOW_SIZE, original_value=65535, new_value=65536), ChangedSetting(setting=SettingCodes.MAX_FRAME_SIZE, original_value=16384, new_value=16777215)}>
+DEBUG:hpack.hpack:Decoding b'?\xe1\x1f\x88a\x96\xdfi~\x94d\ne\xb6\x85\x04\x014\xa0\\\xb8\xdb7\x04\xca\x98\xb4o_\x8b\x1du\xd0b\r&=LtA\xea@\x85$\xabX?_\x8fxq\xb9$\x8d\xb2\x01\xc6 8\x16V\xc9\r\xff@\x8a$\xab\x10d\x9c\xab!#M\xa8\x86\xbf\xcfL:2^w\xff\x8b\x04Dk\x0c\x84*\x10\xb2O\xd4\xb5@_Yg\x8f\x11\r\xa8\xd9rp\xf7\x90:M\x91\x19)M\x7f\xb7\xb29\x92\x9d\x96\x0f\x86\xdd\x9czO\xcbu5\xe7\x8f\xde\xd3q\xc1\x80\xd9\xefe\x01\x7f!6\xa3e\xcd\xc4;\r.\xc5\xcb\xeb-dgA\xb5\x1b)\xe4\xc7\xb7\xc1=\x9f\xbeq\x06\xd1\xb3=\x9c\xd9\xca\xdc|\x9f\x9f\xf7\xf2zc\xfc\xcar\x0b\xf7\xbez\xb4\x84\x98\xb0\x9b\x9f\xe6\x9a3\xd3\xa7\xbeqa\x0c\x98\xa6\xef\'L\x06\xcf{/\xb99d6\xa3e\x9f\x9f\xbc\xb4i\xe9\xd4Z\x0c\x0f\x1c\xfal\xf5\x9f~\xc6\xffzB\x9e{\xe6\xf5\xaa\xf0=i\xf7\xd5\xbet\xe0\xf3\xaa\xffV\xf9\xef\x98\xd9\xefe\x9eN[\r\xa8\xd9g\x93\xf3i\xffy6\x01\xf2\xd3<\x98\xb8\xf5\xc8o\x06\xfd\xfc\x9f\xc6N\x87\xf3\xa7\xdeOZ=\xf3\xf5\xa2\xfc>\xf3\xde\xcb_?\xcd\x86\xd5\xd3\x03::d\xf7\xa7|\xc0\xd1\x7fB2S\xc5<\xf9P\x8c\x9d\x0eb\x0b\r\xb2b\xa2\x7f\xd1?\xe3\x9f/3\xf3\x15\x1d\xf9\x89\xf4\x0f\x93s\xe9\x05\xda\xa3\xe5\x86\xb8\xef7\xd21\x00\xd9\xefe\xf0<O\xdb\xfb\xbb#\x99\r\x91\x19)\xc3\xe0\x98_O\xef\xe6\xd9\xffqa\x07=\xd9\x1c/\xac\xbe\tK\xe2\x1f-\xb4\x10\xd9\x1c\xc9O\x14\xf3\xe5B2\x1b\xc1\x89\x8f/y)\xa3\xaf\xef\xe6_y:W\x1eJx\xa7\x9f*\x11\x92\x80\xbf\x9e\xf6P\x90\\}~\x084I\x8b\x0f^\x7f\x9bg\xc9\xd2\xb7e\xdd\xe0\xc4\xa5\xf4~\xee\xc8\xe6Jp\x86LS\xd1\x1d[k\xe6, \xfd\xe5\xb0\xd9\xefe\x9f\x9f/\x06\xd4l\xb3\xf3\xe5\xe3\xceCx7>A\xf5\x93\xa5q\x97\xd6T\xfe\xfem<b\xd8mF\xcb\xe3\x9f\xe6\x9fr\t\xff_\xb7\xb2#%[k\x8f\x97\x1frb\xc2\x92^\xc8\xe6\x8d\xe4\xf5\xa3\xa6\x80\xea\xbf\xb3\xc6\x86C&{\xd9}\xfe\xfei\xf6>O\xdb\xf8*:\xe4\xe8ss\x16\x9aur\xc3\xd7E\xf8S\xa3\x97\xefMW\x80\r8\xb2\xd3\x9f|\xcd\xfe\xef"uo\xc0\x1d\x1c\xb4\xd3\xab\x7f1h\xbfv\x8c\x86\xf0a\xfei\x97\x9f&\xfb\xc7U\t\x8d\x9e>\xf2t\xae\x9e|\xbc\xfb\xfd\xfc\x02\xf5\x8e\xf0\xb5\xe5\xe1\xae\xd8q\xe9wf&\xf7\xeb\xe7\xf9n\x8dP\x9b]\xe1\xfak\xf6\xfa5\xac\xd6<<\x83f>\x1fjk\x1ag\x81\x8f\xb50y\xac\xd6\x15\x10r,\x9fJ2\x152\xdbB\x82\x00\x9aP.\\m\x9b\x82eLZ7\xfd\xa9\xa0~V\x86b\xc0\xf3\x8d\x00\x1fjcJk\xd5U\x1e\xbe\xd4\xdcR[a\x7fx\x9a\xa4~V\x1c\xc5\x81\x90\xb6\xcb\x80\x00>\xd45D\xa2\xd9\x0b\xba\xd8\xef\x9e\x91\x9a\xa4\x7f{\x91\xd5a\xa65_JBB\x16\xb4\xad\x82\xa2\x1eCU7@\x8dDkL4\x97\xc0\xfd-\xdc\xb6 \xc7\xab\x011w\xdbDkXYl*\'Y\'\xeaZ\xa0B\x19n\xf5\x14\xd7W>\xfe\xdb\xab\x17\x9e\xfc2\xf5\x1c?jk\x1ag\x81\x8f\xb50y\xac\xd6\x15\x10r,\x9fJ2\x152\xdbB\x82\x00\x9aP.\\m\x9b\x82eLZ7\xfd\xa9\xa0~V\x86b\xc0\xf3\x8d\x00\x1fjcJk\xd5U\x1e\xbe\xd4\xdcR[a\x7f@\x95\xf2\xb1j\xee\x7fK[Z\x13aGJ\xc8-\x9d\xccB\xac\x93R_\x0296v\x87%\x07\xb6Ih\x1d\x85Z\x83\x9b\xd9\xab@\x85\x1d\tY\x1d\xc9\x90\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x81\xe7\x1a\x00?'
+DEBUG:hpack.hpack:Decoded 4096, consumed 3 bytes
+DEBUG:hpack.table:Resizing header table to 4096 from 4096
+DEBUG:hpack.hpack:Decoded 8, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b':status', b'200'), consumed 1
+DEBUG:hpack.hpack:Decoded 33, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 22, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'date', b'Tue, 30 Jul 2024 16:53:23 GMT'), total consumed 24 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 31, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 11, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-type', b'application/json'), total consumed 13 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 15, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cf-ray', b'8ab6dd530ab20613-IAD'), total consumed 23 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 10, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 6, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'cf-cache-status', b'DYNAMIC'), total consumed 19 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 55, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 650, consumed 3 bytes
+DEBUG:hpack.hpack:Decoded (b'set-cookie', b'sb-access-token=eyJhbGciOiJIUzI1NiIsImtpZCI6ImQraURQVjhWSmpLbzRiVEEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL21ua3hrY3J5bW9hZXhmbXJoc2ZvLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJhYzJlNjk2Mi0wYjQyLTQ5ZjAtYTgyOC0yNzk5YmExODk5YTgiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzIyMzYyMDAzLCJpYXQiOjE3MjIzNTg0MDMsImVtYWlsIjoic2FudGlhZ29wYWxhY2lvY29saW5hN0BnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7fSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTcyMjM1ODQwM31dLCJzZXNzaW9uX2lkIjoiY2NmOWFkMDAtMWZjOC00NGJmLTg5ZTctOTE1MWNmOTY2MDBlIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.paC2PJUPuAHN7QG5TPYXuMOAiPCay4ZDsP-4HFW1rHU; Path=/; Expires=Wed, 31 Jul 2024 16:53:23 GMT; Max-Age=86400; HttpOnly; Secure'), total consumed 654 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 56, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 26, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), total consumed 28 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 59, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 17, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'vary', b'Origin, Accept-Encoding'), total consumed 19 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 13, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 1, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'sb-gateway-version', <memory at 0x71978f195600>), total consumed 17 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 55, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 91, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'set-cookie', b'sb-refresh-token=ss35ClmpnYvz5nGxvUJkaA; Path=/; Expires=Wed, 31 Jul 2024 16:53:23 GMT; Max-Age=86400; HttpOnly; Secure'), total consumed 93 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 21, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 2, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'x-envoy-upstream-service-time', <memory at 0x71978f195540>), total consumed 26 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 54, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 7, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'server', b'cloudflare'), total consumed 9 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 26, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 3, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'content-encoding', b'gzip'), total consumed 5 bytes, indexed True
+DEBUG:hpack.hpack:Decoded 5, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded 16, consumed 1 bytes
+DEBUG:hpack.hpack:Decoded (b'alt-svc', b'h3=":443"; ma=86400'), total consumed 24 bytes, indexed True
+DEBUG:httpcore.http2:receive_response_headers.complete return_value=(200, [(b'date', b'Tue, 30 Jul 2024 16:53:23 GMT'), (b'content-type', b'application/json'), (b'cf-ray', b'8ab6dd530ab20613-IAD'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'sb-access-token=eyJhbGciOiJIUzI1NiIsImtpZCI6ImQraURQVjhWSmpLbzRiVEEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL21ua3hrY3J5bW9hZXhmbXJoc2ZvLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJhYzJlNjk2Mi0wYjQyLTQ5ZjAtYTgyOC0yNzk5YmExODk5YTgiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzIyMzYyMDAzLCJpYXQiOjE3MjIzNTg0MDMsImVtYWlsIjoic2FudGlhZ29wYWxhY2lvY29saW5hN0BnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7fSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTcyMjM1ODQwM31dLCJzZXNzaW9uX2lkIjoiY2NmOWFkMDAtMWZjOC00NGJmLTg5ZTctOTE1MWNmOTY2MDBlIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.paC2PJUPuAHN7QG5TPYXuMOAiPCay4ZDsP-4HFW1rHU; Path=/; Expires=Wed, 31 Jul 2024 16:53:23 GMT; Max-Age=86400; HttpOnly; Secure'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'vary', b'Origin, Accept-Encoding'), (b'sb-gateway-version', b'1'), (b'set-cookie', b'sb-refresh-token=ss35ClmpnYvz5nGxvUJkaA; Path=/; Expires=Wed, 31 Jul 2024 16:53:23 GMT; Max-Age=86400; HttpOnly; Secure'), (b'x-envoy-upstream-service-time', b'96'), (b'server', b'cloudflare'), (b'content-encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://mnkxkcrymoaexfmrhsfo.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+DEBUG:httpcore.http2:receive_response_body.started request=<Request [b'POST']> stream_id=1
+DEBUG:httpcore.http2:receive_response_body.complete
+DEBUG:httpcore.http2:response_closed.started stream_id=1
+DEBUG:httpcore.http2:response_closed.complete
